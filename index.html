@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+
+    <title>Binary Converter to Decimal and Hexadecimal</title>
+</head>
+
+<body>
+    <header class="main-menu">
+        <div class="logo">
+            <img class="banner-top" src="_img/banner-top.png" alt="">
+            <h1>A Simple Binary Conversor</h1>
+        </div>
+
+    </header>
+    <div class="main">
+        <main>
+            <h3>Put an eight digit binary number:</h3>
+            <input type="number" name="binary" id="binary-id" onkeypress="checkDigits()">
+            <input type="button" id="btn-convert-id" value="Convert">
+            <span id="erro-id"></span>
+
+            <h2>Results:</h2>
+
+            <h3 class="decimal" id="h3-decimal-id"></h3>
+            <h3 class="hexadecimal" id="h3-hexadecimal-id"></h3>
+            <script src="_js/convert.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>
