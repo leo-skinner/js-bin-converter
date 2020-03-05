@@ -5,11 +5,12 @@ btnConvert.addEventListener("click", function (event) {
 
     var binaryTXT = document.querySelector('#binary-id').value
 
-    retornaBinHex(binaryTXT)
+    checkBinaryLength()
+    returnBinHex(binaryTXT)
 
 })
 
-function retornaBinHex(binaryTXT) {
+function returnBinHex(binaryTXT) {
 
     var decimal = parseInt(binaryTXT, 2)
     var hexadec = decimal.toString(16)
@@ -17,15 +18,3 @@ function retornaBinHex(binaryTXT) {
     document.querySelector('#h3-decimal-id').innerHTML = `Decimal: ${decimal}`
     document.querySelector('#h3-hexadecimal-id').innerHTML = `Hexadecimal: ${hexadec}`
 }
-
-/*function checkDigits() {
-
-    evt = window.event
-    var keys = evt.keyCode
-
-    if (keys != 48 || keys != 49 || keys != 96 || keys != 97) {
-        alert('Only 0 or 1 allowed')
-        evt.preventDefault()
-    }
-}
-*/
