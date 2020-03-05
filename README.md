@@ -1,4 +1,4 @@
-# js-bin-converter
+# Javascript Binary Converter
 A simple binary converter
 
 This is a simple binary conversor.
